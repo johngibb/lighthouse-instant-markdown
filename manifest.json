@@ -1,0 +1,11 @@
+{
+  "name": "Lighthouse - Instant Markdown",
+  "version": "1.0",
+  "description": "This is an extension to show a live preview in Lighthouse for Markdown, instead of having to click the 'preview' button and have it processed serverside.",
+  "content_scripts": [
+    {
+      "matches": ["http://*.lighthouseapp.com//*"],
+      "js": ["jquery.js", "live_markdown_preview.js"]
+    }
+  ]
+}
