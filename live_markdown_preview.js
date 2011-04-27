@@ -8,7 +8,7 @@ $(function(){
 	}
 	
 	$('dt.previewable + dd textarea').each(function(){
-		var previewDiv = $('<div>').addClass('markdown-preview').html('[No Preview]');
+		var previewDiv = $('<div>').addClass('markdown-preview desc').html('[No Preview]');
 		$(this).after(
 			createDlItem(
 				$('<label>').html('Preview'),
