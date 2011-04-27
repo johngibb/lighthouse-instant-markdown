@@ -7,7 +7,7 @@ $(function(){
 		)
 		.bind('change keyup', function(){
 			var src = $(this).val();
-			var preview = src; // Todo: Convert markdown to HTML
+			var preview = new Showdown.converter().makeHtml(src);
 
 			$(this).next('div.markdown-preview').html(preview);
 		});

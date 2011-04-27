@@ -5,7 +5,7 @@
   "content_scripts": [
     {
       "matches": ["http://*.lighthouseapp.com/*"],
-      "js": ["jquery.js", "live_markdown_preview.js"]
+      "js": ["jquery.js", "showdown.js", "live_markdown_preview.js"]
     }
   ]
 }
