@@ -21,5 +21,6 @@ $(function(){
 
 			previewDiv.html(preview);
 		})
+		.change() // Trigger the preview immediately
 	})
 });
